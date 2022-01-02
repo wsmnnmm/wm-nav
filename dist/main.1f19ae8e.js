@@ -169,10 +169,12 @@ $('.addButton').on('click', function () {
   //取简化后的url的第一个字母，再转成大写
 
   render();
-}); // window.onbeforeunload = () => {
-//     const string = JSON.stringify(hashMap)
-//     localStorage.setItem('x', string)
-// }
+});
+
+window.onbeforeunload = function () {
+  var string = JSON.stringify(hashMap);
+  localStorage.setItem('x', string);
+};
 },{}],"C:/Users/Huerf/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
