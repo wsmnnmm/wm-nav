@@ -1,0 +1,140 @@
+/*cs reset*/
+* {
+    box-sizing: border-box
+}
+
+*:before, *:after {
+    box-sizing: border-box
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*style*/
+body {
+    background: #eee;
+}
+
+.globalHeader {
+    margin: 22px;
+
+
+}
+
+.searchForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchForm>input {
+    width: 100%;
+    margin-right: 18px;
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.searchForm>button {
+    white-space: nowrap;
+    padding: 0 24px;
+    background: #048BB6;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+/* .globalMain {} */
+
+.siteList {
+    margin: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.siteList>li {
+    margin-bottom: 20px;
+}
+
+.siteList .site {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 24px 0;
+    position: relative;
+}
+
+.siteList .site>.logo {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    text-transform: uppercase;
+    /*把字母变成大写*/
+}
+
+.siteList .site>.link {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.siteList .site>.close {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.siteList .site .icon {
+    width: 24px;
+    height: 24px;
+    color: rgb(63, 62, 62);
+}
+
+.siteList .addButton {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px 0;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.siteList .addButton .icon {
+    width: 64px;
+    height: 64px;
+}
+
+.siteList .addButton .icon-wrapper {
+    width: 64px;
+    height: 64px;
+}
+
+.siteList .addButton .text {
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
