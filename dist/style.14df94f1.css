@@ -28,13 +28,25 @@ body {
 
 .globalHeader {
     margin: 22px;
+}
 
-
+@media (min-width: 500px) {
+    .globalHeader {
+        margin: 100px 0 60px;
+    }
 }
 
 .searchForm {
     display: flex;
     justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .searchForm {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .searchForm>input {
@@ -56,7 +68,11 @@ body {
     font-size: 16px;
 }
 
-/* .globalMain {} */
+.globalMain {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .siteList {
     margin: 22px;
@@ -65,9 +81,24 @@ body {
     justify-content: space-between;
 }
 
+@media (min-width:500px) {
+    .siteList {
+        margin-left: 0;
+        margin-right: -25px;
+        justify-content: flex-start;
+    }
+
+    .siteList>li {
+        margin-right: 25px;
+
+    }
+}
+
 .siteList>li {
     margin-bottom: 20px;
 }
+
+
 
 .siteList .site {
     width: 160px;
@@ -80,6 +111,7 @@ body {
     border-radius: 4px;
     padding: 24px 0;
     position: relative;
+    cursor: pointer;
 }
 
 .siteList .site>.logo {
@@ -102,6 +134,17 @@ body {
     position: absolute;
     right: 2px;
     top: 2px;
+}
+
+@media (min-width: 500px) {
+    .siteList .site>.close {
+        display: none;
+        cursor: default;
+    }
+}
+
+.siteList .site:hover>.close {
+    display: block;
 }
 
 .siteList .site .icon {
@@ -137,4 +180,4 @@ body {
     font-size: 14px;
 }
 
-/*# sourceMappingURL=/style.e308ff8e.css.map */
+/*# sourceMappingURL=style.14df94f1.css.map */

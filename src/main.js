@@ -58,3 +58,20 @@ window.onbeforeunload = () => {
     const string = JSON.stringify(hashMap)
     localStorage.setItem('x', string)
 }
+
+//点击键盘按键自动跳转网站
+$(document).on('keypress', (e) => {
+    const { key } = e
+    console.log(key)
+    for (let i = 0; i < hashMap.length; i++) {
+        if (hashMap[i].logo.toLowerCase() === key) {
+            window.open(hashMap[i].url)
+            //toLowerCase() 把字母变成小写
+        }
+    }
+})
+
+//阻止输入框按键冒泡
+$('.searchForm').on('keypress', (e) => {
+    e.stopPropagation()
+})
