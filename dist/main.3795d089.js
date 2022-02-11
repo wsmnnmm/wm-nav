@@ -129,6 +129,9 @@ var hashMap = xObject || [{
   logo: 'B',
   url: 'https://www.bilibili.com'
 }, {
+  logo: 'G',
+  url: 'https://www.gitee.com'
+}, {
   logo: 'Z',
   url: 'https://www.zhihu.com'
 }];
@@ -192,4 +195,4 @@ $('.searchForm').on('keypress', function (e) {
   e.stopPropagation();
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.8f213900.js.map
+//# sourceMappingURL=main.3795d089.js.map
